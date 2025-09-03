@@ -6,4 +6,5 @@ kind: Namespace
 metadata:
   name: ckad-ns
 ```
-kubectl create namespace ckad-ns
+- kubectl create namespace ckad-ns
+- kubectl create namespace ckad-ns --dry-run=client -o yaml
