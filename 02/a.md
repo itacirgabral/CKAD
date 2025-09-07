@@ -3,3 +3,7 @@
 - k expose deployment web-deploy --type=NodePort  --port=80
 - k get service
 - k get nodes -o wide
+
+> Atualize o deployment para a imagem `nginx:1.26`.
+- k describe deployments.apps web-deploy
+- k set image deployments web-deploy nginx=nginx:1.26
