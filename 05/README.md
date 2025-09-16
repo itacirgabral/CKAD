@@ -1,5 +1,2 @@
-# **Observabilidade**
-
-14. Corrija um Pod que tenta rodar a imagem inexistente `nginx:abc`.
-15. Crie um Pod com `livenessProbe` em `/healthz` porta 8080.
-16. Limite um Pod a `cpu: 200m` e `memory: 128Mi`.
+12. Crie uma NetworkPolicy que só permite o Pod `frontend` falar com o Pod `backend` na porta 80.
+13. Crie um Ingress que roteia `/` para o serviço `web-deploy`.
