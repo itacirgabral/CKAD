@@ -1,0 +1,1 @@
+- https://kubernetes.io/pt-br/docs/reference/kubectl/cheatsheet/
