@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: demo-pod
+spec:
+  serviceAccountName: demo-sa   # aqui está a ligação com a SA
+  containers:
+  - name: test
+    image: busybox
+    command: ["sleep", "3600"]
