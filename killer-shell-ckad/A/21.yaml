@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: neptune-10ab
+  namespace: neptune
+  labels:
+    app: neptune-10ab
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: neptune-10ab
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: neptune-10ab
+    spec:
+      serviceAccountName: neptune-sa-v2  # add
+      containers:
+        - name: neptune-pod-10ab  # change
+          image: httpd:2.4-alpine
+          resources:
+            limits:  # add
+              memory: 50Mi
+            requests:  # add
+              memory: 20Mi

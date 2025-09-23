@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: np1
+  namespace: venus
+spec:
+  podSelector:
+    matchLabels:
+      id: frontend  # label of the pods this policy should be applied on
+  policyTypes:
+    - Egress  # we only want to control egress
+  egress:
+    # 1st egress rule
+    - to:
+        - podSelector:
+            matchLabels:
+              id: api  # allow egress only to pods with api label
+    # 2nd egress rule
+    - ports:
+        - port: 53
+          protocol: UDP  # allow DNS UDP
+        - port: 53
+          protocol: TCP  # allow DNS TCP
