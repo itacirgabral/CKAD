@@ -22,6 +22,9 @@
 
 16/21 76%
 
+- kubectl delete pod ckad-pod-busybox --grace-period=0 --force
+
+
 # ignorar
 - 7 helm
 - 10 service as reverse proxy
