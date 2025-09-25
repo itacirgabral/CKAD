@@ -11,16 +11,19 @@
 - total 09
 
 # refazer
-- 1
-- 5
-- 15
-- 16
-- 19
-- 20
-- 21
+- 1   OK 1
+- 5   OK 1
+- 15  OK 2
+- 16  OK 1
+- 19  OK 2
+- 20  OK 2
+- 21  OK 1
 - total 07
 
 16/21 76%
+
+- kubectl delete pod ckad-pod-busybox --grace-period=0 --force
+
 
 # ignorar
 - 7 helm

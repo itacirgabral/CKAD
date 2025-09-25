@@ -1,0 +1,4 @@
+- https://github.com/alijahnas/CKA-practice-exercises
+- https://github.com/stretchcloud/cka-lab-practice
+- https://github.com/chadmcrowell/CKA-Exercises
+- https://github.com/dgkanatsios/CKAD-exercises
