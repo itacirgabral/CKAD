@@ -17,7 +17,7 @@
 - 2
 - 5
 - 13
-- - total 03
+- total 03
 
 # ignorar
 - 6 helm
