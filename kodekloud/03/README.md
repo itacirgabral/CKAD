@@ -9,6 +9,7 @@
 - 17
 - 18
 - 19
+- total 10
 
 # refazer
 - 2 OK
@@ -18,6 +19,7 @@
 - 12 OK
 - 14 OK
 - 20 OK
+- total 07
 
 # ignorar
 - 7
