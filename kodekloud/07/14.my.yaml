@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: ckad18-rq-aecs
+  namespace: ckad18-rq-ns-aecs
+spec:
+  hard:
+    requests.cpu: "50m"
+    requests.memory: 100Mi
+    limits.cpu: "100m"
+    limits.memory: 200Mi

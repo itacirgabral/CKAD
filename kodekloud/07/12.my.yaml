@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: ns-netpol-ckad
+  namespace: ckad-alpha
+spec:
+  podSelector: {}
+  policyTypes:
+    - Egress
+  egress:
+    # 1️⃣ permitir qualquer destino na porta 53 TCP/UDP (DNS)
+    - ports:
+        - protocol: TCP
+          port: 53
+        - protocol: UDP
+          port: 53
+    # 2️⃣ permitir qualquer porta para pods no namespace ckad-beta
+    - to:
+        - namespaceSelector:
+            matchLabels:
+              name: ckad-beta
