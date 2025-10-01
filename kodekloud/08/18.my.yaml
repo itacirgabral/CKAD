@@ -1,0 +1,5 @@
+- kubectl create namespace ckad18-research-ns
+- kubectl create serviceaccount chatbot-service-account -n ckad18-research-ns
+- kubectl create role chatbot-service-role --verb=get,list --resource=* -n ckad18-research-ns
+- kubectl create rolebinding chatbot-service-rolebinding --role=chatbot-service-role --serviceaccount=ckad18-research-ns:chatbot-service-account -n ckad18-research-ns
+
