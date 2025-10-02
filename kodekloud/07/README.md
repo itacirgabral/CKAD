@@ -16,10 +16,10 @@ One day or day one. It's your choice.
 - 21
 
 # refazer
-- 2
-- 6
-- 12
-- 14
+- 2  ¬¬
+- 6  OK
+- 12 ¬¬
+- 14 OK
 
 # ignorar
 - 08 helm
