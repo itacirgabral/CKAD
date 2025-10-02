@@ -20,7 +20,7 @@ total 12
 
 # refazer
 - 11
-- 12 (troubleshoot network)
+- 12 OK
 - 14
 total 3
 
