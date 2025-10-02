@@ -21,11 +21,11 @@ Regret for the time wasted can become a power of good in the time that remains.
 total 15
 
 # refazer
-- 1
-- 10
-- 16
-- 19
-- 20
+- 1  ¬¬
+- 10 OK
+- 16 OK
+- 19 ¬¬
+- 20 OK
 total 5
 
 # ignorar
