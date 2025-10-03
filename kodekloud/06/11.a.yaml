@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: nginx-ckad
+  name: nginx-ckad10-svcn
+  namespace: nginx-depl-svcn
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx-ckad
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: nginx-ckad
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
+        resources: {}
+status: {}
+
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   creationTimestamp: null
+#   labels:
+#     app: nginx-ckad
+#   name: nginx-ckad10-svcn
+#   namespace: nginx-depl-svcn
+# spec:
+#   replicas: 2
+#   selector:
+#     matchLabels:
+#       app: nginx-ckad
+#   strategy: {}
+#   template:
+#     metadata:
+#       creationTimestamp: null
+#       labels:
+#         app: nginx-ckad
+#     spec:
+#       containers:
+#       - image: nginx
+#         name: nginx
+#         resources: {}
+# status: {}

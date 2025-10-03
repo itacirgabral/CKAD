@@ -1,0 +1,33 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: netpol-ckad-allow-svcn
+  namespace: nginx-depl-svcn
+spec:
+  podSelector:
+    matchLabels:
+      app: nginx-ckad
+  policyTypes:
+  - Ingress
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          criteria: allow
+
+# apiVersion: networking.k8s.io/v1
+# kind: NetworkPolicy
+# metadata:
+#   name: netpol-ckad-allow-svcn
+#   namespace: nginx-depl-svcn
+# spec:
+#   podSelector:
+#     matchLabels:
+#       app: nginx-ckad
+#   policyTypes:
+#   - Ingress
+#   ingress:
+#   - from:
+#     - podSelector:
+#         matchLabels:
+#           criteria: allow

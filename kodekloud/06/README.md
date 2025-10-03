@@ -19,9 +19,9 @@ total 12
 
 
 # refazer
-- 11
+- 11 ¬¬
 - 12 OK
-- 14
+- 14 OK
 total 3
 
 # ignorar
